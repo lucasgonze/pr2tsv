@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #
-# Generate a trivial TSV file, typically to reset just one or two fields in a single sku
+# Generate a trivial TSV file, typically to reset just one or two fields in a table row
 # 
 # Input is command line parameters in the form var=val.
 # Output is a two-line TSV with vars on first line, values on second line.
