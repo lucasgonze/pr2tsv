@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+
+#
+# Generate a trivial TSV file, typically to reset just one or two fields in a single sku
+# 
+# Input is command line parameters in the form var=val.
+# Output is a two-line TSV with vars on first line, values on second line.
+
+import sys
+
+sys.exit
+
+def tsv_line(row):
+	out = ""
+	tab = ""
+	for i in range(0,len(row)):
+		out += tab
+		out += row[i]
+		tab = "\t"
+	print out 
+
+headers = []
+values = []
+for arg in sys.argv:
+	s = arg.split("=",1)
+	if( len(s) > 1):
+		headers.append(s[0])
+		values.append(s[1])
+
+tsv_line(headers)
+tsv_line(values)
+
