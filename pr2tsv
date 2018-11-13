@@ -8,8 +8,6 @@
 
 import sys
 
-sys.exit
-
 def tsv_line(row):
 	out = ""
 	tab = ""
